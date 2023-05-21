@@ -1,0 +1,6 @@
+# On the bandit20 user:
+#	Create a netcat listener on the port 60000 or any other
+nc -nlvp
+#	Then use the SUID biinary by specifying the port 60000 or any other matching the above
+./suconnect 60000
+#	Finally send the current password (bandit20)

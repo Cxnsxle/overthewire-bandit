@@ -1,0 +1,2 @@
+ssh -i sshkey.private bandit14@localhost -p 2220
+echo -e "\n[14] The password is: $(cat /etc/bandit_pass/bandit14)\n"

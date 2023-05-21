@@ -1,0 +1,1 @@
+echo -e "\n[10] The password is: $(strings data.txt | grep -E "==+" | tail -n 1 | rev | awk '{print $1}' | rev)\n"

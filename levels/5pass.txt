@@ -1,0 +1,1 @@
+echo -e "\n[5] The password is: $(cat $(pwd)/-file07)\n"

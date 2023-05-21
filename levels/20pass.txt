@@ -1,0 +1,1 @@
+echo -e "\n[20] The password is: $(./bandit20-do cat /etc/bandit_pass/bandit20)\n"

@@ -1,0 +1,2 @@
+nc localhost 30000
+Submit the password of the level 14: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq

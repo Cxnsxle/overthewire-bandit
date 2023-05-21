@@ -1,0 +1,1 @@
+echo -e "\n[6] The password is: $(find . -type f -readable ! -executable -size 1033c | xargs cat | xargs)\n"

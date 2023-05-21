@@ -1,0 +1,2 @@
+sshpass -p 'hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg' ssh -l bandit18 bandit.labs.overthewire.org -p 2220 /bin/bash
+echo -e "\n[19] The password is: $(cat readme)\n"

@@ -1,0 +1,1 @@
+echo -e "\n[11] The password is: $(cat data.txt | base64 -d | rev | awk '{print $1}' | rev)\n"

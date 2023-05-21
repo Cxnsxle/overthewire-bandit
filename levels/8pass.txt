@@ -1,0 +1,1 @@
+echo -e "\n[8] The password id: $(cat data.txt | grep -e "millionth" | awk 'NF{print $NF}')\n"

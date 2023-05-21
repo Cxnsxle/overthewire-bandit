@@ -1,0 +1,11 @@
+# 1
+cat /etc/cron.d/cronjob_bandit22 
+# 2
+ls -la /usr/bin/cronjob_bandit22.sh
+# 3
+cat /usr/bin/cronjob_bandit22.sh
+# 4
+ls -la /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+# 5
+echo -e "\n[22] The password: id $(cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv)\n"
+

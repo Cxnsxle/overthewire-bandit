@@ -1,0 +1,2 @@
+echo -e "\n[3] The password is: $(cat "spaces in this filename")\n"
+echo -e "\n[3] The password is: $(cat spaces\ in\ this\ filename)\n"

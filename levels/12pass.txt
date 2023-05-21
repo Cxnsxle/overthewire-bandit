@@ -1,0 +1,1 @@
+echo -e "\n[12] The password id: $(cat data.txt | tr '[a-zA-Z]' '[n-za-mN-ZA-M]' | awk 'NF{print $NF}')\n"

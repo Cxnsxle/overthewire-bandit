@@ -1,0 +1,1 @@
+echo -e "\n[4] The password is: $(find . -type f | grep -ve "logout|bashrc|profile" | xargs cat)\n"

