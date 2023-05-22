@@ -1,0 +1,9 @@
+# 1
+dir_name=$(mktemp -d)
+cd $dir_name
+# 2: Create a sript to obtain de password of level 15 and retrieve the pin Code.
+#!/bin/bash 
+ 
+WORKING...!
+ 
+cat a.txt
