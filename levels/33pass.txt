@@ -1,0 +1,11 @@
+# 1: Verifying the shell of the bandit32 user (from bandit31 user)
+grep -e "bandit32" /etc/passwd
+# 2: Loggin into bandit32 (gives us a uppershell), prove the uppershell
+$HOME
+# 3: To call a simple shell (sh) we can use
+$0
+# 4: Calling a tty
+/bin/bash
+whoami
+# 5: Retrive the pass of bandit33 user
+cat /etc/bandit_pass/bandit33

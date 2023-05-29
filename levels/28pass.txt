@@ -1,0 +1,8 @@
+# 1: Creates a temp directory
+dir_name=$(mktemp -d)
+cd $dir_name
+# 2: Clone the repository of bandit27 with port 2220
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+# 3: Enter the password of bandit27 user
+# 4: Retrieve the password of bandit28 user
+cat ./repo/README

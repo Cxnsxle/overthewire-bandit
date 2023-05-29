@@ -1,0 +1,15 @@
+# 1: Creates a temp directory
+dir_name=$(mktemp -d)
+cd $dir_name
+# 2: Clone the repository of bandit28 with port 2220
+git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+# 3: Enter the password of bandit28 user
+# 4: View the content of /repo/README.md
+cat ./repo/README
+# 5: See the man page of git
+man git
+# 6: See the git log
+git log
+# 7: View the difference between the penultimate and the last commit
+git diff <penultimate> <last>
+# 8: Grab the password of bandit29 user

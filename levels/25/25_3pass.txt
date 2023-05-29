@@ -7,7 +7,7 @@ cd $dir_name
 rm -f a.txt 
 while read -r line; do 
     echo "$line" | grep -vE "Wrong|enter the" >> a.txt 
-done < <(for i in {0000..9999}; do 
+done < <(for i in {9999..0000}; do 
     echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i" 
 done | nc localhost 30002) 
  

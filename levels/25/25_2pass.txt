@@ -2,7 +2,7 @@
 dir_name=$(mktemp -d)
 cd $dir_name
 # 2
-for pin in {0000..9999}; do
+for pin in {9999..0000}; do
 	echo -e "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $pin"
 done > combinations.txt
 # 3

@@ -1,0 +1,17 @@
+# 1: Creates a temp directory
+dir_name=$(mktemp -d)
+cd $dir_name
+# 2: Clone the repository of bandit31 with port 2220
+git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+# 3: Enter the password of bandit31 user
+# 4: View the content of /repo/README.md
+cat ./repo/README
+# 5: Create a key.txt file containing a specific string
+echo -e "May I come in?" > key.txt
+# 6: Add key.txt to the current repository
+git status
+git add -f key.txt
+# 7: Add a commit to register the changes
+git commit -m "Creating a new file"
+# 8: Push the changes to master local branch y retrieve as message the password of bandit32 user
+git push -u origin master

@@ -1,0 +1,12 @@
+# 1
+ssh -i bandit26.sshkey bandit26@localhost -p 2220
+# 2: Verifying bash of bandit26 user
+grep -e "bandit26" /etc/passwd
+# 3: Looking at /usr/bin/showtext
+ls -la /usr/bin/showtext
+cat /usr/bin/showtext
+# 4: Connection to bandit26 with a screen less than bandit26 text
+ssh -i bandit26.sshkey bandit26@localhost -p 2220
+# 5: On 'more' command press 'v' button, then write -> ":set shell=/bin/bash"
+# 6: Retrieve a shell -> ":shell"
+# 7: Finally obtain the password in /etc/bandit_pass/bandit26 (Although this user doesn't have a bash by default, just maintain the current shell to escalate to bandit27)
